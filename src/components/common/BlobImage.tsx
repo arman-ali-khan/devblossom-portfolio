@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -23,9 +22,9 @@ const BlobImage: React.FC<BlobImageProps> = ({
       className
     )}>
       {/* Blob background elements */}
-      <div className="absolute -z-10 top-0 -left-4 w-full h-full bg-primary/20 rounded-[42%_58%_38%_62%/42%_55%_45%_58%] blur-2xl opacity-60 animate-blob"></div>
-      <div className="absolute -z-10 top-0 -right-4 w-full h-full bg-accent/40 rounded-[38%_62%_63%_37%/41%_44%_56%_59%] blur-2xl opacity-60 animate-blob animation-delay-2"></div>
-      <div className="absolute -z-10 -bottom-8 left-20 w-full h-full bg-primary/30 rounded-[45%_55%_70%_30%/30%_30%_70%_70%] blur-2xl opacity-60 animate-blob animation-delay-4"></div>
+      <div className="absolute -z-10 w-full h-full bg-primary/20 animate-blob"></div>
+      <div className="absolute -z-10 w-full h-full bg-accent/40 animate-blob animation-delay-2"></div>
+      <div className="absolute -z-10 w-full h-full bg-primary/30 animate-blob animation-delay-4"></div>
       
       {/* Image container */}
       <div className={cn(

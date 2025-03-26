@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBlossom Portfolio - Premium Portfolio Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Previous styles remain unchanged */
+        :root {
+            --primary: #3b82f6;
+            --text: #1f2937;
+            --bg: #ffffff;
+            --border: #e5e7eb;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        pre {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+        }
+        
+        code {
+            font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+        }
+        
+        .nav-link {
+            color: #4b5563;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            transition: all 0.2s;
+        }
+        
+        .nav-link:hover {
+            background: #f3f4f6;
+            color: var(--primary);
+        }
+        
+        .nav-link.active {
+            background: #eff6ff;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header remains unchanged -->
+    <header class="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50">
+        <div class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="/favicon.ico" alt="Logo" class="w-8 h-8">
+                <span class="text-xl font-bold">DevBlossom</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-4">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#installation" class="nav-link">Installation</a>
+                <a href="#customization" class="nav-link">Customization</a>
+                <a href="#support" class="nav-link">Support</a>
+                <a href="https://themeforest.net" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors">
+                    Buy Now - $24
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4 text-center">
+            <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium">Version 1.0.0</span>
+            <h1 class="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+                DevBlossom Portfolio
+            </h1>
+            <p class="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
+                A modern, responsive portfolio template built with React, TypeScript, and Tailwind CSS. Perfect for developers and creative professionals.
+            </p>
+            <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+                <a href="#getting-started" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">
+                    Get Started
+                </a>
+                <a href="https://demo.devblossom.com" target="_blank" class="bg-white text-gray-700 px-6 py-3 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors">
+                    Live Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16 flex gap-8">
+        <!-- Sidebar Navigation -->
+        <aside class="hidden lg:block w-64 flex-shrink-0">
+            <div class="sticky top-24">
+                <nav class="space-y-1">
+                    <div class="mb-4">
+                        <h5 class="font-medium text-sm text-gray-500 mb-2">Getting Started</h5>
+                        <a href="#introduction" class="nav-link block">Introduction</a>
+                        <a href="#features" class="nav-link block">Features</a>
+                        <a href="#requirements" class="nav-link block">Requirements</a>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="font-medium text-sm text-gray-500 mb-2">Installation</h5>
+                        <a href="#download" class="nav-link block">Download</a>
+                        <a href="#installation" class="nav-link block">Quick Start</a>
+                        <a href="#folder-structure" class="nav-link block">Folder Structure</a>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="font-medium text-sm text-gray-500 mb-2">Customization</h5>
+                        <a href="#theme" class="nav-link block">Theme</a>
+                        <a href="#content" class="nav-link block">Content</a>
+                        <a href="#components" class="nav-link block">Components</a>
+                        <a href="#animations" class="nav-link block">Animations</a>
+                        <a href="#seo" class="nav-link block">SEO</a>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="font-medium text-sm text-gray-500 mb-2">Deployment</h5>
+                        <a href="#build" class="nav-link block">Build</a>
+                        <a href="#deployment" class="nav-link block">Deployment</a>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-medium text-sm text-gray-500 mb-2">Help</h5>
+                        <a href="#faqs" class="nav-link block">FAQs</a>
+                        <a href="#changelog" class="nav-link block">Changelog</a>
+                        <a href="#support" class="nav-link block">Support</a>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content -->
+        <div class="flex-1 max-w-3xl">
+            <section id="introduction" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">Introduction</h2>
+                <p class="text-gray-600 mb-4">
+                    DevBlossom Portfolio is a premium portfolio template designed for developers, designers, and creative professionals. Built with React 18, TypeScript, and Tailwind CSS, it offers a perfect blend of aesthetics and functionality.
+                </p>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                    <p class="text-yellow-700">
+                        <strong>Note:</strong> This documentation assumes you have purchased DevBlossom Portfolio from ThemeForest. If you haven't purchased it yet, please visit our <a href="https://themeforest.net/item/devblossom" class="text-primary hover:underline">ThemeForest page</a>.
+                    </p>
+                </div>
+            </section>
+
+            <section id="features" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">Features</h2>
+                <div class="feature-grid">
+                    <div class="p-4 bg-white rounded-lg border border-gray-200">
+                        <h3 class="font-semibold mb-2">🚀 Modern Stack</h3>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• React 18 with TypeScript</li>
+                            <li>• Vite for blazing fast builds</li>
+                            <li>• ESLint & Prettier configured</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg border border-gray-200">
+                        <h3 class="font-semibold mb-2">🎨 Design System</h3>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Tailwind CSS v3</li>
+                            <li>• shadcn/ui components</li>
+                            <li>• Custom animations</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg border border-gray-200">
+                        <h3 class="font-semibold mb-2">📱 Responsive</h3>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• Mobile-first design</li>
+                            <li>• Fluid typography</li>
+                            <li>• Optimized images</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg border border-gray-200">
+                        <h3 class="font-semibold mb-2">⚡ Performance</h3>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li>• 100/100 Lighthouse score</li>
+                            <li>• Optimized bundle size</li>
+                            <li>• SEO best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="download" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">Download & Installation</h2>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <h3 class="text-xl font-semibold mb-4">1. Download from ThemeForest</h3>
+                        <p class="text-gray-600 mb-4">After purchasing DevBlossom Portfolio, you can download the package from:</p>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                            <li>Go to your ThemeForest Downloads page</li>
+                            <li>Find DevBlossom Portfolio in your purchases</li>
+                            <li>Click "Download" and select "All Files & Documentation"</li>
+                        </ol>
+                    </div>
+
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <h3 class="text-xl font-semibold mb-4">2. Extract Files</h3>
+                        <p class="text-gray-600 mb-4">The downloaded package includes:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><code>devblossom-portfolio.zip</code> - Main template files</li>
+                            <li><code>documentation.html</code> - This documentation</li>
+                            <li><code>changelog.md</code> - Version history</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <h3 class="text-xl font-semibold mb-4">3. Install Dependencies</h3>
+                        <p class="text-gray-600 mb-4">Open your terminal and run:</p>
+                        <pre><code># Navigate to template directory
+cd devblossom-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section id="customization" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">Customization</h2>
+                
+                <div id="theme" class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Theme Customization</h3>
+                    <p class="text-gray-600 mb-4">
+                        The template uses Tailwind CSS for styling. You can customize colors, typography, spacing, and more in:
+                    </p>
+                    <pre><code>// tailwind.config.ts
+export default {
+  theme: {
+    extend: {
+      colors: {
+        primary: {...},
+        secondary: {...}
+      },
+      // Add custom theme options
+    }
+  }
+}</code></pre>
+                </div>
+
+                <div id="content" class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Content Customization</h3>
+                    <p class="text-gray-600 mb-4">All content is stored in TypeScript files under <code>src/data/</code>:</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• <code>projectsData.ts</code> - Portfolio projects</li>
+                        <li>• <code>skillsData.ts</code> - Skills and expertise</li>
+                        <li>• <code>servicesData.ts</code> - Services offered</li>
+                    </ul>
+                </div>
+
+                <div id="components" class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Component Customization</h3>
+                    <p class="text-gray-600 mb-4">
+                        The template includes reusable components built with shadcn/ui. Customize them in:
+                    </p>
+                    <pre><code>src/components/
+├── common/      # Shared components
+├── layout/      # Layout components
+├── sections/    # Page sections
+└── ui/          # UI components</code></pre>
+                </div>
+
+                <div id="animations" class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">Animation Customization</h3>
+                    <p class="text-gray-600 mb-4">
+                        Animations are handled through Tailwind CSS and custom keyframes. Modify them in:
+                    </p>
+                    <pre><code>// src/index.css
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}</code></pre>
+                </div>
+            </section>
+
+            <section id="support" class="mb-16">
+                <h2 class="text-3xl font-bold mb-6">Support</h2>
+                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <h3 class="text-xl font-semibold mb-4">Need Help?</h3>
+                    <p class="text-gray-600 mb-6">
+                        We provide dedicated support for all our ThemeForest customers. Here's how to get help:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-medium">Email Support</h4>
+                                <p class="text-sm text-gray-600">Average response time: 24 hours</p>
+                                <a href="mailto:support@devblossom.com" class="text-primary hover:underline text-sm">support@devblossom.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-medium">Documentation</h4>
+                                <p class="text-sm text-gray-600">Detailed guides and examples</p>
+                                <a href="/docs" class="text-primary hover:underline text-sm">View Documentation</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                            </svg>
+                            <div>
+                                <h4 class="font-medium">Community Forum</h4>
+                                <p class="text-sm text-gray-600">Connect with other users</p>
+                                <a href="https://forum.devblossom.com" class="text-primary hover:underline text-sm">Join Discussion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-white font-semibold mb-4">DevBlossom</h3>
+                    <p class="text-sm">
+                        A premium portfolio template for developers and creative professionals.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#installation" class="hover:text-white transition-colors">Installation</a></li>
+                        <li><a href="#support" class="hover:text-white transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://twitter.com/devblossom" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="https://themeforest.net/user/devblossom" class="hover:text-white transition-colors">ThemeForest</a></li>
+                        <li><a href="mailto:support@devblossom.com" class="hover:text-white transition-colors">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
+                <p>&copy; 2024 DevBlossom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Active link highlighting
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= sectionTop - 180) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

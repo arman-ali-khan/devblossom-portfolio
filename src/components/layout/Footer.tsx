@@ -41,9 +41,9 @@ const Footer: React.FC = () => {
           
           <div className="h-px w-full max-w-md bg-border mb-6"></div>
           
-          <p className="text-sm text-muted-foreground flex items-center">
+          <p className="text-sm block text-muted-foreground items-center">
             © {currentYear} John Doe. All rights reserved. Made with 
-            <Heart size={14} className="mx-1 text-primary" fill="currentColor" />
+            <Heart size={14} className="mx-1 inline text-primary" fill="currentColor" />
             in San Francisco
           </p>
         </div>

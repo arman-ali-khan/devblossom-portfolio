@@ -1,69 +1,82 @@
-# Welcome to your Lovable project
+# DevBlossom Portfolio
 
-## Project info
+![DevBlossom Portfolio](public/og-image.png)
 
-**URL**: https://lovable.dev/projects/bab6968a-da85-4cc5-99ac-54149517f710
+A modern, responsive portfolio template built with React, TypeScript, and Tailwind CSS. Perfect for developers, designers, and creative professionals who want to showcase their work in a beautiful and professional way.
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- 🚀 Built with React 18, TypeScript, and Vite
+- 🎨 Styled with Tailwind CSS and shadcn/ui components
+- 📱 Fully responsive design
+- ⚡ Fast and optimized performance
+- 🌙 Smooth animations and transitions
+- 📊 Modern and clean UI design
+- 🔍 SEO friendly
+- 📝 Easy to customize and maintain
 
-**Use Lovable**
+## 🚀 Quick Start
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bab6968a-da85-4cc5-99ac-54149517f710) and start prompting.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/devblossom-portfolio.git
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+2. Navigate to the project directory:
+```bash
+cd devblossom-portfolio
+```
 
-**Use your preferred IDE**
+3. Install dependencies:
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📖 Documentation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+For detailed documentation, please see [documentation.html](documentation.html).
 
-**Use GitHub Codespaces**
+## 🎨 Customization
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The template is highly customizable. Main configuration files:
 
-## What technologies are used for this project?
+- `tailwind.config.ts` - Theme and design system
+- `src/data/` - Content and data
+- `src/components/` - UI components
 
-This project is built with .
+## 📦 Building for Production
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run build
+```
 
-## How can I deploy this project?
+The build output will be in the `dist` directory.
 
-Simply open [Lovable](https://lovable.dev/projects/bab6968a-da85-4cc5-99ac-54149517f710) and click on Share -> Publish.
+## 🤝 Contributing
 
-## I want to use a custom domain - is that possible?
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💖 Support
+
+If you like this template, please consider giving it a ⭐️ on GitHub!
+
+## 🔗 Links
+
+- [Live Demo](https://devblossom-portfolio.com)
+- [Documentation](documentation.html)
+- [Issues](https://github.com/yourusername/devblossom-portfolio/issues)
+
+## 📧 Contact
+
+For support or inquiries, please contact:
+- Email: support@example.com
+- Twitter: [@devblossom](https://twitter.com/devblossom)

@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
         <a 
           href="#about" 
-          className="p-2 rounded-full bg-secondary hover:bg-primary hover:text-white transition-colors"
+          className="p-2 rounded-full inline-block bg-secondary hover:bg-primary hover:text-white transition-colors"
           aria-label="Scroll to About section"
         >
           <ArrowDown size={24} />

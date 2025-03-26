@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -8,7 +7,8 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerTrigger
+  DrawerTrigger,
+  DrawerTitle,
 } from '@/components/ui/drawer';
 
 // Dynamically import icons
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
                     <span className="relative z-10">{link.name}</span>
                     
                     {/* Hover effect background */}
-                    <span className="absolute inset-0 bg-primary/10 rounded-md translate-y-full transition-transform duration-300 group-hover:translate-y-0"></span>
+                    {/* <span className="absolute inset-0 bg-primary/10 rounded-md translate-y-full transition-transform duration-300 group-hover:translate-y-0"></span> */}
                     
                     {/* Active indicator */}
                     {activeSection === link.href.substring(1) && (
@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
             </ul>
           </nav>
           
-          {/* Mobile Navigation Drawer Trigger */}
+          {/* Mobile Navigation Drawer */}
           <div className="md:hidden">
             <Drawer open={open} onOpenChange={setOpen}>
               <DrawerTrigger asChild>
@@ -114,12 +114,12 @@ const Navbar: React.FC = () => {
                   <Menu size={24} />
                 </button>
               </DrawerTrigger>
-              <DrawerContent className="h-[80vh] rounded-t-xl">
+              <DrawerContent className="h-[90vh] rounded-t-xl">
                 <div className="px-4 py-6 flex flex-col h-full">
                   <div className="flex items-center justify-between mb-6">
-                    <a href="#home" className="text-xl font-bold">
+                    <DrawerTitle className="text-xl font-bold">
                       <span className="text-primary">Dev</span>Portfolio
-                    </a>
+                    </DrawerTitle>
                     <DrawerClose asChild>
                       <button
                         className="rounded-full p-2 hover:bg-secondary"
@@ -130,8 +130,8 @@ const Navbar: React.FC = () => {
                     </DrawerClose>
                   </div>
                   
-                  <nav className="flex-grow overflow-y-auto pb-10">
-                    <div className="grid grid-cols-2 gap-4">
+                  <nav className="flex-grow pb-10">
+                    <div className="grid grid-cols-3 gap-4">
                       {navLinks.map((link, index) => (
                         <div 
                           key={link.name}
@@ -144,7 +144,7 @@ const Navbar: React.FC = () => {
                           <a 
                             href={link.href}
                             className={cn(
-                              "flex flex-col items-center justify-center gap-2 p-4 rounded-lg text-center transition-all h-full",
+                              "flex flex-col items-center justify-center gap-2 p-2 rounded-lg text-center transition-all h-full",
                               activeSection === link.href.substring(1)
                                 ? "bg-primary/10 text-primary font-medium"
                                 : "hover:bg-secondary"
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
                             <div className="w-12 h-12 flex items-center justify-center rounded-full bg-secondary">
                               {getIcon(link.icon)}
                             </div>
-                            <span className="text-sm font-medium">{link.name}</span>
+                            <span className="text-xs">{link.name}</span>
                             
                             {activeSection === link.href.substring(1) && (
                               <span className="w-2 h-2 bg-primary rounded-full absolute top-2 right-2" />
